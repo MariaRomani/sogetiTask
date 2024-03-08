@@ -34,6 +34,12 @@ describe('Sogeti website test', () => {
 
   });
 
+
+  // while the reCAPTCHA cannot be automated so either run the automation with Environment that has the reCAPTCHA disabled
+// or run the automation till the step before the reCAPTCHA and document it to be manually tested.
+// generally if something cannot be automated, document it clearly in test plan that it will be handled manually with the reasons and how to handled all the edge and corner cases of that part
+  // regarding the Test case we have, i created a scenario in case we have an environment with reCAPTCHA and another scenario with skipping the reCAPTCHA to be done manually
+
   // the following TC should be performed on environment with the reCAPTCHA disabled
   it.skip('should submit the contact form with random generated data', () => {
     const name = chance.name();
