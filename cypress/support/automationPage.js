@@ -12,8 +12,6 @@ class AutomationPage {
 
     scrollDownToContactUsForm() {
 
-        // cy.get('#contact-us-form').scrollIntoView();
-        // cy.get('[data-testid="contact-us-form"]').scrollIntoView()
         cy.get("h2.Form__Title:contains('Contact us:')").scrollIntoView();
 
 
@@ -24,13 +22,11 @@ class AutomationPage {
     fillContactUsForm() {
 
 
-        //const randomEmail = Math.random().toString(36).substring(2,15)+"gmail.com"
-        const getRandomString = () => Math.random().toString(36).substring(2); // Generate a random string
-        const getRandomEmail = () => `test${Math.floor(Math.random() * 10000)}@example.com`; // Generate a random email
-        const getRandomPhoneNumber = () => `555-${Math.floor(100 + Math.random() * 900)}-${Math.floor(1000 + Math.random() * 9000)}`; // Generate a random phone number
-        const getRandomCompany = () => Math.random().toString(36).substring(2) + " " + "Company"; // Generate a random company
-        const getRandomMessage = () => Math.random().toString(36).substring(2) + " " + "thank you"; // Generate a random string message
-
+        const getRandomString = () => Math.random().toString(36).substring(2); 
+        const getRandomEmail = () => `test${Math.floor(Math.random() * 10000)}@example.com`; 
+        const getRandomPhoneNumber = () => `555-${Math.floor(100 + Math.random() * 900)}-${Math.floor(1000 + Math.random() * 9000)}`; 
+        const getRandomCompany = () => Math.random().toString(36).substring(2) + " " + "Company"; 
+        const getRandomMessage = () => Math.random().toString(36).substring(2) + " " + "thank you"; 
 
         cy.get("div.textboxelementblock > div > div > label:contains('First Name')").type(getRandomString())
         cy.get("div.textboxelementblock > div > div > label:contains('Last Name')").type(getRandomString())

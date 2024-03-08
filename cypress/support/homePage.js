@@ -30,7 +30,6 @@ class HomePage {
     constructor() {
         this.countryList = 'span[aria-label="Worldwide"]';
         this.countryItems = '#country-list-id ul li a';
-        this.subMenu = '#country-list-id ul li a';
     }
 
 
@@ -40,11 +39,11 @@ class HomePage {
     }
 
     assertSubMenuVisible() {
-        cy.get(this.subMenu).should('be.visible');
+        cy.get(this.countryItems).should('be.visible');
     }
 
     assertSubMenuContainsCountry(countryName) {
-        cy.get(this.subMenu).contains(countryName).should('be.visible');
+        cy.get(this.countryItems).contains(countryName).should('be.visible');
     }
 
 
