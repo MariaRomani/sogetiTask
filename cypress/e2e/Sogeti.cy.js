@@ -15,7 +15,6 @@ describe('Sogeti website test', () => {
   beforeEach(() => {
     cy.viewport(1920, 1080);
     cy.visit('https://www.sogeti.com/', { force: true });
-    // acceptCookiesIfNeeded(); // Function to accept cookies
     homePage.acceptCookies();
 
   });
@@ -84,7 +83,7 @@ describe('Sogeti website test', () => {
 
   it('should display the Worldwide dropdown and navigate to the country-specific Sogeti links', () => {
 
-    const errors = []; // Array to store errors
+    const errors = [];
     homePage.openCountryMenu();
 
       homePage.assertSubMenuVisible();
