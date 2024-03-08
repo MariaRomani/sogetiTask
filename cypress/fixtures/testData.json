@@ -1,0 +1,23 @@
+{
+    "contactUsForm": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "1234567890",
+        "message": "This is a test message."
+    },
+    "countries": [
+        "BELGIUM",
+        "FINLAND",
+        "FRANCE",
+        "GERMANY",
+        "IRELAND",
+        "LUXEMBOURG",
+        "NETHERLANDS",
+        "NORWAY",
+        "SPAIN",
+        "SWEDEN",
+        "UK",
+        "USA"
+    ]
+}
