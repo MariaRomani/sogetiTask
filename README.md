@@ -23,6 +23,7 @@ npm install
 
 
 ##About the Test Cases
+
 Test Case 1
 1. Navigate to the URL https://www.sogeti.com/
 2. Hover over Services Link (see Image below) and then Click Automation link.
@@ -37,7 +38,7 @@ Test Case 2
 5. Check the I agree checkbox.
 6. Then Click SUBMIT button.
 7. After clicking SUBMIT button the form is submitted and Thank you message is displayed. Assert the Thank you message.
-# Note:
+
 Automate the Test till that Step and please explain in comments in why it is not possible to automate the Test Step? What are the possible workarounds to Test such Test Case?
 Test Case 3
 1. Navigate to the URL https://www.sogeti.com/
